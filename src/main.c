@@ -9,17 +9,6 @@
 #define LED0          DT_ALIAS(led2)
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0, gpios);
 
-void boot_banner(void) {
-  // Zephyr định nghĩa hàm boot_banner với thuộc tính "weak" ,
-  // cho phép bạn dễ dàng "ghi đè" nên có thể customize banner bằng cách định nghĩa lại hàm boot_banner()
-  printk("\n");
-  printk("=======   =======     ========          ========   ========\n");
-  printk("  = =           ===   ===    ===       ===    ===  ===     \n");
-  printk("  = =      =======    ===    ===       ===    ===  ========\n");
-  printk("  = =     ===         ===    ===       ===    ===       ===\n");
-  printk("  = =      =======    ========          ========   ========\n");
-  printk("\n");
-}
 
 int main() {
   printk("===== START MAIN.C APPLICATION ROM =====\n");
