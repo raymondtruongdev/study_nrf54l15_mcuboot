@@ -1,0 +1,21 @@
+{
+  "liveServer.settings.port": 5500,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "C_Cpp.clang_format_style": "file",
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "nrf-connect.applications": [
+    "${workspaceFolder}"
+  ]
+}

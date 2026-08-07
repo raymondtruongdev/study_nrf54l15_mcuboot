@@ -1,0 +1,14 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+UseTab: Never
+AlignConsecutiveDeclarations: true
+
+ColumnLimit: 0
+
+BinPackArguments: false
+BinPackParameters: false
+
+AlignAfterOpenBracket: DontAlign
+AlignConsecutiveMacros: true
+
+

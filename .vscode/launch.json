@@ -1,0 +1,40 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "cwd": "${workspaceFolder}",
+      // "executable": ".\\build\\MyApp\\zephyr\\zephyr.elf",
+      "executable": ".\\build\\MyApp\\zephyr\\zephyr.signed.hex",
+      // "executable": ".\\build\\mcuboot\\zephyr\\zephyr.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      // "runToEntryPoint": "main",
+      "servertype": "jlink",
+      // "serverpath": "C:\\Program Files\\SEGGER\\JLink_V844\\JLinkGDBServerCL.exe",
+      "device": "nRF54L15_M33",
+      // "armToolchainPath": "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin\\arm-zephyr-eabi-gdb.exe",
+      "rtos": "Zephyr",
+      "serverpath": "/Applications/SEGGER/JLink_V898/JLinkGDBServerCLExe",
+      "gdbPath": "/opt/nordic/ncs/toolchains/ccc010f809/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    },
+    {
+      "name": "Attach",
+      "cwd": "${workspaceFolder}",
+      "executable": ".\\build\\MyApp\\zephyr\\zephyr.elf",
+      "request": "attach",
+      "type": "cortex-debug",
+      // "runToEntryPoint": "main",
+      "servertype": "jlink",
+      // "serverpath": "C:\\Program Files\\SEGGER\\JLink_V844\\JLinkGDBServerCL.exe",
+      "device": "nRF54L15_M33",
+      // "armToolchainPath": "C:\\ncs\\toolchains\\dcbdc366a1\\opt\\zephyr-sdk\\gnu\\arm-zephyr-eabi\\bin\\arm-zephyr-eabi-gdb.exe",
+      "rtos": "Zephyr",
+      "serverpath": "/Applications/SEGGER/JLink_V898/JLinkGDBServerCLExe",
+      "gdbPath": "/opt/nordic/ncs/toolchains/ccc010f809/opt/zephyr-sdk/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    }
+  ]
+}
